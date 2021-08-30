@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(./bg.jpg);
+    background-size: cover;
+    display: flexbox;
+}
+
+main{
+    font-family: unset;
+}
+
+.landing{
+    min-height: 100hv; 
+    padding: 2rem 5rem;
+   
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin-left: auto;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li{
+    padding-left: 10rem;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+#logo{
+    font-size: 2rem;
+    font-weight: lighter;
+    font-family: unset;
+    color: rgb(255, 255, 255);
+}
+
+.big-text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: xx-large;
+    transform: translate(-50%, -30%);
+    color: rgb(255, 255, 255);
+}
+
+.intro{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text{
+    color: lavenderblush;
+    font-size:  2.5rem;
+}
+
+.slider{
+    background: rgb(47, 70, 100);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+}
+.hide{
+    background: black;
+    overflow: hidden;
+}
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+@media screen and (max-width: 780px){ 
+    body{
+        display: none;
+    }
+}
